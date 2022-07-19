@@ -23,7 +23,7 @@ int main(){
     cin>>Card_number;
     if(Card_number=="quit")
     break;
-    else if(!isNumberString(Card_number))
+    else if(!isNumberString(Card_number) || Card_number.length()>16)
     {
         cout<<"Enter a valid input!";
         continue;
